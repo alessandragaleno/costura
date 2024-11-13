@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-size: cover;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+h1 ,a, h2, h3{
+    margin: 10px;
+    color:#d90d8f
+}
+img > .logo{
+    top: 23px;
+}
+.lupa{
+    margin: 10px;
+}
+p{
+    color: #fff;
+}
+header{
+    background-color: #e9b1d4;
+}
+.cabecalho{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 23px;
+    margin-inline: 25px;
+}
+.fa-pen-to-square, .fa-user, .fa-shop{
+    color: #fff;
+}
+.capa1{
+    padding-top: -12px;
+    float: right;
+}
+.capa2{
+    padding-top: -12px;
+    float: right;
+    padding-left: 10px;
+}
+.modelo2{
+    padding-top: 30px;
+    margin-left: 133px;
+    margin-right: -93px;
+}
+.texto{
+    margin-left: 53px;
+    padding-bottom:55px;
+    font-size: 25px;
+}
+.feminino{
+    width: 20%; 
+    height:-50px;
+}
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px
+
+}
+.foto1 {
+    margin-top: -213px;
+    margin-left: 267px; /*margem do lado esquerdo*/
+    margin-bottom: 10px; /* Espaçamento inferior entre foto1 e foto2 */
+}
+.foto2 {
+    margin-top: -516px;
+    margin-left: 267px; /*margem do lado esquedo*/
+    margin-bottom: 10px; /* Espaçamento inferior entre foto2 e foto3 */
+}
+.foto2 img, .foto3 img {
+    max-width: 13px; /* Define a largura máxima para foto2 e foto3 */
+    max-height: 23px;
+    height: auto; /* Altura automática para manter a proporção */
+    display: block; /* Garante que as imagens se comportem como blocos */
+    margin: 0 auto; /* Centraliza as imagens horizontalmente */
+}
+/*Rodapé do site*/
+footer{
+    background-color: #e9b1d4;/*cor do rodapé*/
+    padding: 20px;/*espaçamentos entre icons*/
+}
+.icons{
+    font-size: 35px;/*tamanho de icones*/
+    display: flex;;/*icons um do lado do outro*/
+    justify-content: space-around; /*espaço entre icons*/
+    text-decoration: none; /*remover linha embaixo de uma ancora*/
+}

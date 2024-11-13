@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de agendaamento</title>
+    <link rel="stylesheet" href="form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+body{
+    background-image: url(pexels-ellie-burgin-4671738\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    font-family: "Twinkle Star", cursive;
+}
+h1{
+    color:  #a723a0;
+}
+.form{
+    padding-bottom: 4px;
+    text-align: center;
+}
+.agenda{
+    width: 20%;
+    height: 310px;
+    border-radius: 15px;
+    border-style: hidden;
+    border-color: #fff;
+    background-color: #c6bffa;
+    opacity:  .7;
+    margin: 0 74px 123px 74px;
+    padding: 15px;
+    display: inline-block;
+    margin-top: 194px;
+}
+input:hover{
+    border-color: gold;
+    color:  #f7aff3;
+}
+::placeholder:hover{
+    background-color: #f7aff3;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+    </style>
+    <div class="form">
+        <form action="">
+            <div class="agenda">
+                <h1>Agende seu horário</h1>
+                <input type="text" id="nome" placeholder="nome: ">
+                <br><br>
+                <input type="tel" id="telefone" placeholder="Telefone: ">
+                <br><br>
+                <input type="date" id="data">
+                <br><br>
+                <input type="time" name="hora" id="hora">
+                <br><br>
+                <input type="button" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <a href="index.html"><i class='bx bxs-chevrons-left' ></i> Voltar</a>
+</body>
+</html>
