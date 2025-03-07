@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/agenda.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <!-- Menu Hamburguer -->
+    <i class='bx bx-menu' onclick="toggleMenu()"></i>
+     <!-- Menu Lateral -->
+     <nav id="menu" class="menu">
+        <button class="close-btn" onclick="toggleMenu()">X</button>
+        <ul>
+            <li><a href="/index.html">Página Inicial</a></li>
+            <br>
+            <li><a href="/templates/servicos.html">Serviços</a></li>
+            <br>
+            <li><a href="/templates/sobre.html">Sobre</a></li>
+            <br>
+            <li><a href="/templates/sobre.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form action="" id="formulario">
+            <h1>Agende seu horário</h1>
+            <input type="text" placeholder="nome" id="nome" style="color: #000;">
+            <br><br>
+            <input type="text" placeholder="telefone" id="telefone" style="color: #000;">
+            <br><br>
+            <label>Qual serviço você deseja: </label>
+            <br><br>
+            <div class="escolhas">
+                <label class="servico">ajuste</label>
+                <input type="checkbox" name="box" id="box">
+            </div>
+            <br><br>
+            <div class="escolhas">
+                <label class="servico">conserto</label>
+                <input type="checkbox" name="box" id="box">
+            </div>
+            <br><br>
+            <div class="escolhas">
+                <label class="servico">criação</label>
+                <input type="checkbox" name="box" id="box">
+            </div>
+            <br><br>
+            <label>quantidade de peças:</label>
+            <input style="color: #000;" type="number" name="qtd" id="qtd" placeholder="o">
+            <br><br>
+            <label for="">data máxima de entrega: </label>
+            <input style="color: #000;" type="date" name="" id="data" >
+            <br><br>
+            <label for="">descrição de serviço(s) da(s) peças(s)</label>
+            <br><br>
+            <label for="">comunicar via whatsapp.</label>
+            <br><br>
+            <a href="https://wa.me/5586995251010" target="_blank" class="linkagem"><input type="button" value="enviar" id="butao"></a>
+        </form>
+
+    </main>
+
+    <script src="/assets/js/agendamento.js"></script>
+</body>
+</html>

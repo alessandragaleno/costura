@@ -1,0 +1,187 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Italiana&family=Playwrite+AU+VIC+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+GB+S+Guides:ital@0;1&family=Playwrite+HR+Lijeva:wght@100..400&family=Suez+One&display=swap'); */
+/* Estilo do botão de menu hambúrguer */
+
+.bx-menu {
+  font-size: 35px;
+  color: #fff;
+  
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+  
+.hamburger-menu {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  border-radius: 5px;
+}
+  
+/* Menu lateral */
+.menu {
+   display: none;  /* Menu começa escondido */
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 250px;  /* Largura do menu */
+   background-color: #333;
+   color: white;
+   z-index: 2000;  /* Menu ficará acima dos outros conteúdos */
+   padding-top: 60px;
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+}
+  
+.menu.active {
+  display: block;
+  opacity: 1;
+}
+  
+/* Estilo dos links do menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+  
+.menu ul li {
+  margin: 20px 0;
+}
+  
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  transition: color 0.3s;
+}
+  
+.menu ul li a:hover {
+  color: #f97f3e;
+}
+  
+/* Botão de fechar (X) */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+  
+/* Estilos responsivos - mostrar o hambúrguer em telas pequenas */
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: block;  /* Exibe o botão hambúrguer */
+  }
+}
+
+body {
+    background: url("/img/maqui3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10px;
+    padding-top: 0;
+    margin-top: 0;
+}
+h1 {
+    font-size: 40px;
+    color: #f97f3e;
+}
+
+form {
+  position: absolute;
+  left: 33%;
+  top: 5%;
+  text-align: center;
+}
+
+.escolhas {
+  display: inline-flex;
+  align-items: center;  /* Alinha o conteúdo verticalmente (label e input) */
+  gap: 10px;  /* Ajusta o espaço entre a label e o checkbox */
+}
+
+.escolhas input[type="checkbox"] {
+  width: 20px;  /* Ajusta o tamanho do checkbox (opcional) */
+  height: 20px; /* Ajusta o tamanho do checkbox (opcional) */
+}
+
+.servico {
+    display: block;
+}
+
+#qtd {
+    width: 6%;
+    text-align: center;
+}
+label, input{
+    font-size: 25px;
+    color: #fff;
+}
+input {
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+}
+
+/* Remover as setas para os navegadores modernos */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;  /* Remove as setas no Chrome, Safari, Opera */
+  margin: 0;  /* Remove o espaço extra ao redor */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;  /* Remove as setas no Firefox */
+}
+
+#butao {
+    color: #000;
+    background-color: #f97f3e;
+    border: none;
+    border-radius: 7px;
+}
+#butao {
+    background-color: #f97f3e; /* Cor de fundo padrão */
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Arredonda os cantos */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição suave */
+}
+  
+#butao:hover {
+    background-color: #000; /* Cor de fundo ao passar o mouse */
+    color: #f97f3e;
+}
+  
+#butao:active {
+    background-color: #000; /* Cor de fundo ao clicar */
+    color: #f97f3e;
+    transform: scale(0.95); /* Pequena escala ao clicar */
+}

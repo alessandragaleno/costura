@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Italiana&family=Playwrite+AU+VIC+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+GB+S+Guides:ital@0;1&family=Playwrite+HR+Lijeva:wght@100..400&family=Suez+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+body{
+    background: url("/img/fund.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Italiana", serif;
+    font-weight: 450px;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+.fa-house {
+    float: right;
+    font-size: 25px;
+    margin-right: 12px;
+    padding-top: 0;
+}
+.bx-menu {
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    left: 0.20%;
+}
+/* Estilo do botão de menu hambúrguer */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+  
+.hamburger-menu {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+  
+/* Menu lateral */
+.menu {
+    display: none;  /* Menu começa escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;  /* Largura do menu */
+    background-color: #333;
+    color: white;
+    z-index: 2000;  /* Menu ficará acima dos outros conteúdos */
+    padding-top: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.menu.active {
+    display: block;
+    opacity: 1;
+}
+  
+/* Estilo dos links do menu */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+  
+.menu ul li {
+    margin: 20px 0;
+}
+  
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+  
+.menu ul li a:hover {
+    color: #f97f3e;
+}
+  
+/* Botão de fechar (X) */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+/* Estilos responsivos - mostrar o hambúrguer em telas pequenas */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;  /* Exibe o botão hambúrguer */
+    }
+}
+h1{
+    font-family: "Suez One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #f97f3e;
+    text-shadow: rgb(38, 38, 35, 0.5) 2px 5px 5px;
+}
+
+p{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-shadow: rgb(38, 38, 35, 0.5) 2px 5px 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #f97f3e;
+}
