@@ -47,6 +47,7 @@ body {
 
 /* Menu lateral */
 .menu {
+  position: fixed;
   display: none;  /* Menu começa escondido */
   position: fixed;
   top: 0;
@@ -98,13 +99,6 @@ body {
   border: none;
   font-size: 30px;
   cursor: pointer;
-}
-
-/* Estilos responsivos - mostrar o hambúrguer em telas pequenas */
-@media (max-width: 768px) {
-  .hamburger-menu {
-      display: block;  /* Exibe o botão hambúrguer */
-  }
 }
   
 .conteudo {
@@ -192,4 +186,63 @@ h1 {
 .icons i:hover {
   color: #d26811;
   transform: translateY(-5px); /* Faz o ícone subir um pouco */
+}
+
+/* Estilos responsivos - mostrar o hambúrguer em telas pequenas */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 135%;
+  }
+
+   .hamburger-menu {
+      display: block;  /* Exibe o botão hambúrguer */
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    position: relative;
+    left: 67%;
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+
+  .prg p {
+    font-size: 1.rem;
+    padding: 0 10px;
+    position: relative;
+    left: 65%;
+    color: #000;
+  }
+
+  .agendar {
+    width: 62%;
+    font-size: 1rem; /* ajustei 0.rem para 1rem, pq 0.rem não é válido */
+    right: 12%;
+    transform: translateY(-0.5vh);
+
+  }
+
+  nav.menu {
+    width: 70%; /* menu ocupa menos espaço no mobile */
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .icons ul {
+    top: 78%;
+    left: 12%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    gap: 34%;
+  }
+
+  .sobre2 img {
+      width: 100%;      /* ocupa 100% da largura disponível */
+      height: auto;     /* mantém a proporção */
+      display: block;   /* tira espaços indesejados */
+  }
 }
