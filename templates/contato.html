@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Serviços de Costura</title>
+  <link rel="stylesheet" href="/assets/css/contato.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Botão Hamburguer -->
+  <i class='bx bx-menu' onclick="toggleMenu()"></i>
+
+  <!-- Menu lateral -->
+  <nav id="menu" class="menu">
+    <button class="close-btn" onclick="toggleMenu()">×</button>
+    <ul>
+      <li><a href="/templates/index.html">Página Inicial</a></li>
+      <br>
+      <li><a href="/templates/servicos.html">Serviços</a></li>
+      <br>
+      <li><a href="/templates/sobre.html">Sobre</a></li>
+      <br>
+      <li><a href="/templates/contato.html" class="active">Contato</a></li>
+      <br>
+      <li><a href="/templates/sobre.html">agendamento</a></li>
+    </ul>
+  </nav>
+
+  <!-- Ícone home -->
+  <div class="home">
+    <a href="/templates/index.html">
+      <i class="fa-solid fa-house"></i>
+    </a>
+  </div>
+
+  <header>
+    <div class="container1">
+      <h1>Entre em Contato</h1>
+      <p>Estamos sempre prontos para atender você!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contatos">
+      <div class="contato-card">
+        <i class='bx bxl-whatsapp'></i>
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/5586995251010" target="_blank">Fale conosco</a>
+      </div>
+
+      <div class="contato-card">
+        <i class='bx bxl-instagram'></i>
+        <h3>Instagram</h3>
+        <a href="https://instagram.com/seu_instagram" target="_blank">@Cantinhodacostura</a>
+      </div>
+
+      <div class="contato-card">
+        <i class='bx bx-map'></i>
+        <h3>Localização</h3>
+        <a href="http://google.com.br/maps/@-2.9081433,-41.7266375,3a,75y,27.18h,65.41t/data=!3m7!1e1!3m5!1s-lL612mOcR3prvNQDl2nBA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D24.592547613781917%26panoid%3D-lL612mOcR3prvNQDl2nBA%26yaw%3D27.18101503761949!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Google Maps</a>
+      </div>
+
+      <div class="contato-card">
+        <i class='bx bx-support'></i>
+        <h3>Suporte</h3>
+        <a href="mailto:cantinhodacostura89@gmail.com">suportecostura@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Serviços de Costura | Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do menu -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('active');
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/42e6d3e2b0.js" crossorigin="anonymous"></script>
+</body>
+</html>

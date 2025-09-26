@@ -15,17 +15,17 @@
     <nav id="menu" class="menu">
        <button class="close-btn" onclick="toggleMenu()">X</button>
        <ul>
-           <li><a href="/index.html">Página Inicial</a></li>
+           <li><a href="/templates/index.html">Página Inicial</a></li>
            <br>
            <li><a href="/templates/servicos.html">Serviços</a></li>
            <br>
            <li><a href="/templates/sobre.html">Sobre</a></li>
            <br>
-           <li><a href="#icons">Contato</a></li>
+           <li><a href="/templates/contato.html">Contato</a></li>
        </ul>
    </nav>
         <div class="home">
-            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="/templates/index.html"><i class="fa-solid fa-house"></i></a>
         </div>
         <div class="container">
             <h1>Serviços de Costura</h1>
@@ -33,10 +33,10 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container1">
         <!-- Serviços -->
         <section id="services">
-            <h2>Nosso Serviços</h2>
+            <h2>Nossos Serviços</h2>
             <div class="services">
                 <div class="service">
                     <h3>Ajustes de Roupa</h3>
@@ -54,17 +54,31 @@
         </section>
         <!-- WhatsApp -->
         <section>
-            <a href="https://wa.me/5586995251010" class="whatsapp-btn" target="_blank">
+            <a id="whatsapp-link" href="https://wa.me/5586995251010" 
+                class="whatsapp-btn" target="_blank">
                 Fale Conosco pelo WhatsApp
             </a>
         </section>
+
     </div>
     
     <footer>
         <p>&copy; 2025 Serviços de Costura | Todos os direitos reservados.</p>
     </footer>
+    
+<!--<script>
+    // Número do WhatsApp (no formato internacional, sem +, (), ou -)
+    const numero = "5586995251010";
 
+    // Mensagem pronta
+    const mensagem = "Olá, gostaria de saber mais sobre os serviços de costura.";
 
-    <script src="/assets/js/script.js"></script>
+    // Gera o link com a mensagem já codificada
+    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    // Joga o link dentro do <a>
+    document.getElementById("whatsapp-link").setAttribute("href", link);
+</script> --> 
+
 </body>
 </html>

@@ -6,11 +6,12 @@
 }
   
 body{
-    background: url("/img/fund.jpg") no-repeat center center fixed;
+    background: url("/img/sobre.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: "Italiana", serif;
     font-weight: 450px;
     font-style: normal;
+    padding-top: 2%;
     padding-bottom: 20px;
 }
 .fa-house {
@@ -109,10 +110,47 @@ body{
     .hamburger-menu {
         display: block;  /* Exibe o botão hambúrguer */
     }
+
+    .home { 
+        position: absolute;
+        margin-left: 94%;
+    }
+
+    .bx-menu {
+        position: absolute;
+        left: 0%;
+    }
+
+    body {
+        position: absolute;
+        margin: 0 8% 0 8%;
+    }
+
+    h1 {
+        margin-top: 16%;
+        font-family: "Suez One", serif;
+        font-weight: 10px;
+        font-style: normal;
+        text-align: center;
+        color: #f97f3e;
+        text-shadow: rgb(38, 38, 35, 0.5) 2px 5px 5px;
+    }
+
+    p {
+        font-size: 5px;
+        font-weight: bold;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100px;
+        font-style: normal;
+        text-align: center;
+        text-shadow: rgb(38, 38, 35, 0.5) 2px 5px 5px;
+    }
 }
+
 h1{
     font-family: "Suez One", serif;
-    font-weight: 400;
+    font-weight: 400px;
     font-style: normal;
     text-align: center;
     color: #f97f3e;
@@ -123,7 +161,7 @@ p{
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-    font-family: "Italiana", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
